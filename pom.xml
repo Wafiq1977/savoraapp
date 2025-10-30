@@ -8,10 +8,10 @@
 		<version>3.5.7</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>savoraapp.com</groupId>
-	<artifactId>savoraapp</artifactId>
+	<groupId>savora.com</groupId>
+	<artifactId>savora</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>savoraapp</name>
+	<name>savora</name>
 	<description>Demo project for Spring Boot</description>
 	<url/>
 	<licenses>
@@ -47,6 +47,10 @@
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
 		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-validation</artifactId>
+		</dependency>
+		<dependency>
 			<groupId>org.thymeleaf.extras</groupId>
 			<artifactId>thymeleaf-extras-springsecurity6</artifactId>
 		</dependency>
@@ -77,6 +81,38 @@
 			<artifactId>spring-security-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+
+		<!-- Email Integration -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-mail</artifactId>
+		</dependency>
+
+		<!-- WebSocket for Real-time Chat -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-websocket</artifactId>
+		</dependency>
+
+		<!-- Elasticsearch for Advanced Search -->
+		<dependency>
+			<groupId>org.springframework.data</groupId>
+			<artifactId>spring-data-elasticsearch</artifactId>
+		</dependency>
+
+		<!-- Google Analytics Integration -->
+		<dependency>
+			<groupId>com.google.api-client</groupId>
+			<artifactId>google-api-client</artifactId>
+			<version>2.2.0</version>
+		</dependency>
+
+		<!-- Payment Gateway Integration (commented out due to unavailable artifact) -->
+		<!-- <dependency>
+			<groupId>com.midtrans</groupId>
+			<artifactId>java-library</artifactId>
+			<version>2.0.0</version>
+		</dependency> -->
 	</dependencies>
 
 	<build>
